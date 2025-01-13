@@ -1,0 +1,258 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif; /* 본고딕 적용 */
+  background-color: aliceblue; /* 전반적인 배경 색상 */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar*/
+nav{
+  background-color: steelblue;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo{
+  margin-left: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav ul{
+  display: flex;
+  margin-right: 50px;
+  gap: 15px;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+/* content */
+.content{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-y: auto;
+  background-color: aliceblue;
+  height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content - home */
+.journalLayout{
+  background-color: #fff;
+  border-radius: 15px;
+  width: 80%;
+  box-shadow: 0 0 10px #999999;
+  padding: 2em;
+}
+
+.journalLayout p{
+  margin-bottom: 1em;
+}
+
+.journalLayout ul{
+  margin-bottom: 1em;
+}
+
+/* content - profile */
+.profileCard{
+  border-radius: 8px;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px #999999;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.profileCard .profileHeader{
+  display: flex;
+  gap: 2em;
+}
+
+.profileCard img{
+  border-radius: 50%;
+  height: 100px;
+}
+
+.profileCard .profileInfo h2{
+  font-size: 24px;
+}
+
+.profileCard .profileInfo h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* content - posts */
+.posts{
+  text-align: left;
+}
+
+.postCard{
+  padding: 1em;
+  border-radius: 8px;
+  margin-top: 1em;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px #999;
+}
+
+.postCard p{
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.likeBtn{
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.likeBtn.liked{
+  color: crimson;
+}
+
+/* comment */
+.commentWrap{
+  margin-top: 30px;
+}
+
+.commentToggleBtn{
+  background-color: steelblue;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.commentToggleBtn:hover{
+  background-color: midnightblue;
+}
+
+.commentAddBtn, .addBtn{
+  background-color: mediumseagreen;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.commentAddBtn{
+  margin-left: 10px;
+}
+
+.inputText{
+  margin-bottom: 15px;
+}
+
+.inputText input{
+  padding: 8px;
+  width: 60%;
+}
+
+.commentAddBtn:hover, .addBtn:hover{
+  background-color: darkgreen;
+}
+
+.editBtn, .deleteBtn, .iLikeYou, .likeNumber{
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.likeNumber{
+  background-color: ghostwhite;
+  border: 1px solid darkviolet;
+  color: darkviolet;
+}
+
+.iLikeYou{
+  background-color: honeydew;
+  border: 1px solid limegreen;
+  color: limegreen;
+}
+
+.editBtn{
+  background-color:aliceblue;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.deleteBtn{
+  background-color: snow;
+  border: 1px solid brown;
+  color: brown;
+}
+
+.commentList li{
+  background-color: aliceblue;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+.reple{
+  width: 93%; 
+  margin: auto; 
+  display: flex;
+}
+
+.reple input{
+  flex: 3; 
+  margin-right: 10px;
+  padding: 0 5px;
+}
+
+.reple button{
+  flex: 1;
+}
+
+/* Footer */
+.footer{
+  height: 50px;
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
